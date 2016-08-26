@@ -1,4 +1,20 @@
 <style lang="scss">
+.login-logo {
+  animation: loginlogo 2s infinite;
+  filter:invert(100%);
+
+}
+
+@keyframes loginlogo {
+    0% {
+      filter:invert(100%);
+    }
+    50% {
+      filter:invert(30%);
+
+
+    }
+}
 
 #particles-js {
     float: left;
@@ -13,6 +29,9 @@
     background: rgba(0, 0, 0, 0.4) !important;
 }
 
+.login-box {
+  margin-top:40px;
+}
 .btn {
     transition: all 0.2s ease;
 }
@@ -25,8 +44,7 @@
 </div>
 <div class="login-box">
     <div class="login-logo">
-        <a href="/">
-        </a>
+      <img src="../../assets/image/teamlogo.png">
     </div>
     <div class="login-box-body">
         <p class="login-box-msg">Welcome Back!</p>
@@ -169,7 +187,7 @@ export default {
             },
             "retina_detect": true
         });
-  
+
     }
 
 }

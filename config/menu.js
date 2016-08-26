@@ -9,15 +9,20 @@ module.exports = [
     icon: 'fa-tasks',
     child: [
       {
-        name: 'Create new survey',
+        name: 'List',
+        link: '/app/survey-list',
+        icon: 'fa-tasks'
+      },
+      {
+        name: 'Create',
         link: '/app/create-survey',
         icon: 'fa-plus'
       }
     ]
   },
   {
-    name: 'Configurations',
-    link: '/configurations',
-    icon: 'fa-cogs'
+    name: 'Results',
+    link: '/app/charts',
+    icon: 'fa-bar-chart'
   }
 ]

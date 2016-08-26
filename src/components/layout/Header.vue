@@ -1,3 +1,21 @@
+<style>
+.logo-lg {
+  animation: logolg 3s infinite;
+}
+
+@keyframes logolg {
+    0% {
+      color:#fff;
+      transform:scale(1);
+    }
+    25% {
+      color:#eee;
+      transform:scale(1.1);
+
+    }
+}
+
+</style>
 <template>
   <header class="main-header">
 
@@ -6,7 +24,7 @@
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>T</b>T</span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>Team</b>T</span>
+      <span class="logo-lg">Team<b>T</b></span>
     </a>
 
     <!-- Header Navbar: style can be found in header.less -->
@@ -215,7 +233,7 @@
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <img src="./../../assets/image/user2-160x160.jpg" class="user-image" alt="User Image">
-              <span class="hidden-xs">Alexander Pierce</span>
+              <span class="hidden-xs">admin@teamt.dev</span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
@@ -223,7 +241,7 @@
                 <img src="./../../assets/image/user2-160x160.jpg" class="img-circle" alt="User Image">
 
                 <p>
-                  Alexander Pierce - Web Developer
+                 admin@teamt.dev
                   <small>Member since Nov. 2012</small>
                 </p>
               </li>

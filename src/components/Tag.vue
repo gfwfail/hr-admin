@@ -77,7 +77,7 @@
 <template>
 
 <div class="bootstrap-tagsinput" :class="class" @click="onClick">
-    <span class="tag label label-info" v-for="tag in value">{{tag}}<span @click="removeTag(tag)" class="tag-remove"></span></span>
+    <span class="tag label label-info" v-for="tag in value" track-by="$index">{{tag}}<span @click="removeTag(tag)" class="tag-remove"></span></span>
 
     <input v-el:taginput type="text" :placeholder="placeholder" @keyup.enter="addTag(tag)" @blur="addTag(tag)" @keydown.8="backspace()" v-model="tag">
 </div>

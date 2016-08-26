@@ -12,7 +12,7 @@ h1 {
     {{text}}</div>
 <template v-if="type=='select'">
     <select class="form-control" :multiple="multiple">
-        <option :value="option" v-for="option in options">{{option}}</option>
+        <option :value="option" v-for="option in options" track-by="$index">{{option}}</option>
     </select>
 </template>
 

@@ -16,6 +16,9 @@ import Login from './components/pages/Login.vue'
 
 import VueAnimatedList from 'vue-animated-list'
 import CreateSurvey from './components/pages/CreateSurvey.vue'
+import SurveyList from './components/pages/SurveyList.vue'
+import Charts from './components/pages/Charts.vue'
+
 // install router
 Vue.use(VueRouter)
 Vue.use(VueAnimatedList)
@@ -40,8 +43,16 @@ router.map({
         // when /foo/bar is matched
         component: CreateSurvey,
       },
+      '/survey-list': {
+        // Bar will be rendered inside Foo's <router-view>
+        // when /foo/bar is matched
+        component: SurveyList,
+      },
       '/dashboard':{
         component: Dashboard
+      },
+      '/charts':{
+        component: Charts
       }
 
     },
